@@ -1,0 +1,8 @@
+<svg class="fig" viewBox="0 0 160 100" role="img" aria-label="Layered oxide cathode with a lithium ion hopping between layers">
+  <g class="f-line">{% for y in (0..2) %}{% assign yy = y | times: 32 | plus: 14 %}<line x1="6" y1="{{ yy }}" x2="154" y2="{{ yy }}"/>{% endfor %}</g>
+  <g class="f-poly">{% for y in (0..2) %}{% assign yy = y | times: 32 | plus: 14 %}{% for x in (0..6) %}{% assign xx = x | times: 22 | plus: 14 %}<path d="M{{ xx }} {{ yy | minus: 8 }} l8 8 l-8 8 l-8 -8z"/>{% endfor %}{% endfor %}</g>
+  <g class="f-ion">{% for y in (0..1) %}{% assign yy = y | times: 32 | plus: 30 %}{% for x in (0..6) %}{% assign xx = x | times: 22 | plus: 25 %}{% unless y == 0 and x == 3 %}<circle cx="{{ xx }}" cy="{{ yy }}" r="3.4"/>{% endunless %}{% endfor %}{% endfor %}</g>
+  <circle class="f-hot" cx="80" cy="30" r="4.2"/>
+  <path class="f-arrow" d="M84 27 q11 -9 22 0" marker-end="url(#ah-e)"/>
+  <defs><marker id="ah-e" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L6 3 L0 6z" class="f-head"/></marker></defs>
+</svg>

@@ -1,0 +1,3 @@
+# Optional: your own figure for a paper (e.g. its TOC graphic), shown instead of the topic illustration.
+# Put the image in assets/papers/ and map the BibTeX key to it:
+# casella_cr-lif_2026: /assets/papers/cr-lif.png

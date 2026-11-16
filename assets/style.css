@@ -104,3 +104,81 @@ p { margin: .6rem 0; }
 @media (max-width: 520px) { .cv li { grid-template-columns: 1fr; gap: 0; } }
 
 .site-footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+
+/* ---------- visuals ---------- */
+:root {
+  --t-glasses: #2a78d6; --t-energy: #eb6834; --t-phase-change: #1baf7a; --t-devices: #eda100; --t-other: #8a8285;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --t-glasses: #3987e5; --t-energy: #d95926; --t-phase-change: #199e70; --t-devices: #c98500; --t-other: #7a7275; }
+}
+.t-glasses { --tc: var(--t-glasses); }
+.t-energy { --tc: var(--t-energy); }
+.t-phase-change { --tc: var(--t-phase-change); }
+.t-devices { --tc: var(--t-devices); }
+.t-other { --tc: var(--t-other); }
+
+/* hero */
+.hero { margin: 1.5rem 0 0; }
+.hero canvas { display: block; width: 100%; height: 190px; border-radius: 10px; background: var(--chip); touch-action: pan-y; cursor: crosshair; }
+.hero figcaption { font: .72rem var(--mono); color: var(--muted); margin-top: .4rem; text-align: right; }
+
+/* line illustrations: --tc tints the "active" atoms, accent elsewhere */
+.fig { display: block; width: 100%; height: auto; }
+.fig .f-line, .fig .f-line * { fill: none; stroke: var(--muted); stroke-width: 1; opacity: .8; }
+.fig .f-thick { stroke-width: 2; }
+.fig .f-back { stroke-dasharray: 3 3; opacity: .5; }
+.fig .f-poly * { fill: var(--chip); stroke: var(--muted); stroke-width: 1; }
+.fig .f-ion, .fig .f-ion * { fill: var(--muted); }
+.fig .f-hot, .fig .f-hot *, .fig .f-hotfill { fill: var(--tc, var(--accent)); }
+.fig .f-level { stroke: var(--muted); stroke-width: 1.5; }
+.fig .f-arrow { fill: none; stroke: var(--tc, var(--accent)); stroke-width: 1.6; }
+.fig .f-dash { stroke-dasharray: 4 3; }
+.fig .f-head { fill: var(--tc, var(--accent)); }
+
+.themes.cards li { border-left: 0; padding: 0; }
+.themes.cards .fig { background: var(--chip); border-radius: 8px; padding: .6rem 1rem; margin-bottom: .6rem; aspect-ratio: 16 / 9; }
+.themes.cards li:nth-child(1) { --tc: var(--t-energy); }
+.themes.cards li:nth-child(3) { --tc: var(--t-glasses); }
+.themes.cards li:nth-child(4) { --tc: var(--t-phase-change); }
+
+/* recent paper cards */
+.paper-cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); }
+.paper-cards a { display: block; color: var(--text); }
+.paper-cards a:hover { text-decoration: none; }
+.paper-cards a:hover .t { color: var(--accent); }
+.paper-cards .thumb { border-radius: 8px; margin-bottom: .5rem; }
+.paper-cards .topic { font: .7rem var(--mono); color: var(--muted); display: flex; align-items: center; gap: .35rem; }
+.paper-cards .topic::before { content: ""; width: .55rem; height: .55rem; border-radius: 2px; background: var(--tc); }
+.paper-cards .t { display: block; font-weight: 600; font-size: .92rem; line-height: 1.35; margin: .2rem 0; }
+.paper-cards .j { font-size: .8rem; color: var(--muted); }
+
+.thumb { background: var(--chip); aspect-ratio: 16 / 10; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: .4rem; }
+.thumb img { width: 100%; height: 100%; object-fit: contain; }
+
+/* publication list with thumbnails */
+.pubs li { display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
+.pubs li .thumb { display: none; }
+@media (min-width: 640px) {
+  .pubs li { grid-template-columns: 1fr 7.5rem; }
+  .pubs li .thumb { display: flex; border-radius: 6px; }
+}
+.pubs li[hidden] { display: none; }
+.dot { display: inline-block; width: .55rem; height: .55rem; border-radius: 2px; background: var(--tc); margin-right: .4rem; vertical-align: .05em; }
+.sw { display: inline-block; width: .6rem; height: .6rem; border-radius: 2px; background: var(--tc); margin-right: .35rem; vertical-align: -.02em; }
+
+/* chart */
+.chart { position: relative; margin: 3.25rem 0 1rem; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart .seg { fill: var(--tc); }
+.chart .base { stroke: var(--rule); }
+.chart text { font: 11px var(--mono); fill: var(--muted); text-anchor: middle; }
+.chart text.tot { fill: var(--text); }
+.chart .hit { fill: transparent; cursor: default; }
+.chart .hit:hover { fill: var(--text); fill-opacity: .04; }
+.chart .tip {
+  position: absolute; top: -.5rem; transform: translate(-50%, -100%); pointer-events: none;
+  background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: .35rem .6rem;
+  font: .75rem/1.5 var(--mono); color: var(--text); box-shadow: 0 2px 8px rgb(0 0 0 / .08); white-space: nowrap;
+}
+.chart .tip > span { display: block; }

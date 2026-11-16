@@ -1,0 +1,6 @@
+# Fixed order = chart stacking order and colour slot (validated categorical palette).
+glasses: { label: "glasses", order: 1 }
+energy: { label: "batteries & energy", order: 2 }
+phase-change: { label: "phase-change", order: 3 }
+devices: { label: "devices", order: 4 }
+other: { label: "other", order: 5 }

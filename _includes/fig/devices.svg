@@ -1,0 +1,70 @@
+<svg class="fig" viewBox="0 0 160 100" role="img" aria-label="Faceted quantum-dot nanocrystal emitting light">
+<polygon class="f-line f-thick" points="112.9,69.0 80.0,88.0 47.1,69.0 47.1,31.0 80.0,12.0 112.9,31.0"/>
+<polygon class="f-line f-back" points="100.8,62.0 80.0,74.0 59.2,62.0 59.2,38.0 80.0,26.0 100.8,38.0"/>
+<g class="f-ion">
+<circle cx="52.0" cy="43.0" r="2.6" class=""/>
+<circle cx="48.0" cy="50.0" r="2.6" class=""/>
+<circle cx="52.0" cy="57.0" r="2.6" class=""/>
+<circle cx="60.0" cy="29.0" r="2.6" class=""/>
+<circle cx="56.0" cy="36.0" r="2.6" class=""/>
+<circle cx="60.0" cy="43.0" r="2.2" class="f-hotfill"/>
+<circle cx="56.0" cy="50.0" r="2.6" class=""/>
+<circle cx="60.0" cy="57.0" r="2.2" class="f-hotfill"/>
+<circle cx="56.0" cy="64.0" r="2.6" class=""/>
+<circle cx="60.0" cy="71.0" r="2.6" class=""/>
+<circle cx="64.0" cy="22.0" r="2.6" class=""/>
+<circle cx="68.0" cy="29.0" r="2.6" class=""/>
+<circle cx="64.0" cy="36.0" r="2.2" class="f-hotfill"/>
+<circle cx="68.0" cy="43.0" r="2.2" class="f-hotfill"/>
+<circle cx="64.0" cy="50.0" r="2.2" class="f-hotfill"/>
+<circle cx="68.0" cy="57.0" r="2.2" class="f-hotfill"/>
+<circle cx="64.0" cy="64.0" r="2.2" class="f-hotfill"/>
+<circle cx="68.0" cy="71.0" r="2.6" class=""/>
+<circle cx="64.0" cy="78.0" r="2.6" class=""/>
+<circle cx="72.0" cy="22.0" r="2.6" class=""/>
+<circle cx="76.0" cy="29.0" r="2.2" class="f-hotfill"/>
+<circle cx="72.0" cy="36.0" r="2.2" class="f-hotfill"/>
+<circle cx="76.0" cy="43.0" r="2.2" class="f-hotfill"/>
+<circle cx="72.0" cy="50.0" r="2.2" class="f-hotfill"/>
+<circle cx="76.0" cy="57.0" r="2.2" class="f-hotfill"/>
+<circle cx="72.0" cy="64.0" r="2.2" class="f-hotfill"/>
+<circle cx="76.0" cy="71.0" r="2.2" class="f-hotfill"/>
+<circle cx="72.0" cy="78.0" r="2.6" class=""/>
+<circle cx="80.0" cy="22.0" r="2.6" class=""/>
+<circle cx="84.0" cy="29.0" r="2.2" class="f-hotfill"/>
+<circle cx="80.0" cy="36.0" r="2.2" class="f-hotfill"/>
+<circle cx="84.0" cy="43.0" r="2.2" class="f-hotfill"/>
+<circle cx="80.0" cy="50.0" r="2.2" class="f-hotfill"/>
+<circle cx="84.0" cy="57.0" r="2.2" class="f-hotfill"/>
+<circle cx="80.0" cy="64.0" r="2.2" class="f-hotfill"/>
+<circle cx="84.0" cy="71.0" r="2.2" class="f-hotfill"/>
+<circle cx="80.0" cy="78.0" r="2.6" class=""/>
+<circle cx="88.0" cy="22.0" r="2.6" class=""/>
+<circle cx="92.0" cy="29.0" r="2.6" class=""/>
+<circle cx="88.0" cy="36.0" r="2.2" class="f-hotfill"/>
+<circle cx="92.0" cy="43.0" r="2.2" class="f-hotfill"/>
+<circle cx="88.0" cy="50.0" r="2.2" class="f-hotfill"/>
+<circle cx="92.0" cy="57.0" r="2.2" class="f-hotfill"/>
+<circle cx="88.0" cy="64.0" r="2.2" class="f-hotfill"/>
+<circle cx="92.0" cy="71.0" r="2.6" class=""/>
+<circle cx="88.0" cy="78.0" r="2.6" class=""/>
+<circle cx="96.0" cy="22.0" r="2.6" class=""/>
+<circle cx="100.0" cy="29.0" r="2.6" class=""/>
+<circle cx="96.0" cy="36.0" r="2.2" class="f-hotfill"/>
+<circle cx="100.0" cy="43.0" r="2.2" class="f-hotfill"/>
+<circle cx="96.0" cy="50.0" r="2.2" class="f-hotfill"/>
+<circle cx="100.0" cy="57.0" r="2.2" class="f-hotfill"/>
+<circle cx="96.0" cy="64.0" r="2.2" class="f-hotfill"/>
+<circle cx="100.0" cy="71.0" r="2.6" class=""/>
+<circle cx="96.0" cy="78.0" r="2.6" class=""/>
+<circle cx="104.0" cy="36.0" r="2.6" class=""/>
+<circle cx="108.0" cy="43.0" r="2.6" class=""/>
+<circle cx="104.0" cy="50.0" r="2.6" class=""/>
+<circle cx="108.0" cy="57.0" r="2.6" class=""/>
+<circle cx="104.0" cy="64.0" r="2.6" class=""/>
+<circle cx="112.0" cy="50.0" r="2.6" class=""/>
+</g>
+<path class="f-arrow f-wave" d="M124 32 q5 -4 10 0 t10 0 t10 0"/>
+<path class="f-arrow f-wave" d="M124 50 q5 -4 10 0 t10 0 t10 0"/>
+<path class="f-arrow f-wave" d="M124 68 q5 -4 10 0 t10 0 t10 0"/>
+</svg>

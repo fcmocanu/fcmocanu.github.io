@@ -1,0 +1,6 @@
+{% assign p = include.p %}<li class="t-{{ p.topic }}">
+  <a href="https://doi.org/{{ p.doi }}">{% include thumb.html p=p %}
+  <span class="topic">{{ site.data.topics[p.topic].label }}</span>
+  <span class="t">{{ p.title }}</span>
+  <span class="j"><i>{{ p.journal }}</i> ({{ p.year }})</span></a>
+</li>
