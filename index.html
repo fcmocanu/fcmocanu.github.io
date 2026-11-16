@@ -1,0 +1,53 @@
+---
+layout: default
+title: Felix-Cosmin Mocanu
+hero: true
+---
+<figure class="hero">
+  <canvas id="hero" aria-hidden="true"></canvas>
+  <figcaption>a crystal that melts where you point · move your cursor over it</figcaption>
+</figure>
+<section class="intro">
+  <div>
+    <h1>Felix-Cosmin Mocanu</h1>
+    <p class="tags"><span>machine-learned interatomic potentials</span><span>battery cathodes</span><span>metal-organic polyhedra</span><span>phase-change materials</span><span>disordered and glassy solids</span></p>
+
+    <p class="lede">I'm a computational materials scientist. I build machine-learned interatomic potentials and use them, together with first-principles calculations, to understand how real materials behave: how ions move through battery cathodes, how amorphous solids store and lose energy, and how porous cages flex and bind guests.</p>
+
+    <p>I'm currently a postdoctoral researcher in the <a href="https://como.ceb.cam.ac.uk/">Computational Modelling group</a> of Prof. Markus Kraft at the University of Cambridge, working on the digital discovery of metal-organic polyhedra. Before that I modelled Li- and Na-ion cathodes with Prof. Saiful Islam at the University of Oxford, as part of the Faraday Institution's CATMAT project, and worked on low-temperature excitations in glasses with Francesco Zamponi at the École normale supérieure in Paris.</p>
+
+    <p>I did my PhD in Chemistry at Cambridge with Stephen Elliott and Gábor Csányi, where I fitted one of the first transferable machine-learned potentials for the Ge–Sb–Te phase-change memory materials.</p>
+  </div>
+  <!-- To add a photo: put it in assets/ and uncomment, then add class "has-photo" to the section.
+  <img src="{{ '/assets/photo.jpg' | relative_url }}" alt="Felix-Cosmin Mocanu"> -->
+</section>
+
+<h2>Research</h2>
+<ul class="themes cards">
+  <li>
+    {% include fig/energy.svg %}
+    <b>Battery cathodes</b><span class="when">Oxford · 2023–2025</span>
+    <p>Oxygen redox and voltage fade in Li-rich and Na-ion layered oxides, olivine phosphates, and thin-film conversion cathodes, with experimental partners across CATMAT.</p>
+  </li>
+  <li>
+    {% include fig/mop.svg %}
+    <b>Metal-organic polyhedra</b><span class="when">Cambridge · 2026–</span>
+    <p>Machine-learned potentials for porous molecular cages for carbon capture, drug delivery and photocatalysis, and how well they capture vibrational properties.</p>
+  </li>
+  <li>
+    {% include fig/glasses.svg %}
+    <b>Glasses and two-level systems</b><span class="when">ENS Paris · 2020–2023</span>
+    <p>Finding the microscopic tunnelling defects that dominate the low-temperature physics of glasses, with simulation and machine learning.</p>
+  </li>
+  <li>
+    {% include fig/phase-change.svg %}
+    <b>Phase-change memory</b><span class="when">Cambridge · 2014–2020</span>
+    <p>A Gaussian approximation potential for Ge<sub>2</sub>Sb<sub>2</sub>Te<sub>5</sub>, defects and radiation tolerance, and thermal transport in amorphous chalcogenides.</p>
+  </li>
+</ul>
+
+<h2>Recent papers</h2>
+<ul class="paper-cards">
+{% for p in site.data.publications limit: 4 %}{% include paper-card.html p=p %}{% endfor %}
+</ul>
+<p class="small"><a href="{{ '/publications/' | relative_url }}">All {{ site.data.publications | size }} publications →</a></p>

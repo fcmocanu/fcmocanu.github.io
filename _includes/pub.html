@@ -1,0 +1,8 @@
+{% assign p = include.p %}<li class="t-{{ p.topic }}" data-topic="{{ p.topic }}"{% if p.first_author %} data-first="1"{% endif %}>
+  <div class="body">
+  <span class="t">{% if p.doi != "" %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</span>
+  <span class="a">{{ p.authors }}</span>
+  <span class="j"><span class="dot" title="{{ site.data.topics[p.topic].label }}"></span><i>{{ p.journal }}</i>{% if p.volume != "" %} <b>{{ p.volume }}</b>{% endif %}{% if p.pages != "" %}, {{ p.pages }}{% endif %} ({{ p.year }}){% if p.status == "preprint" %} · preprint{% endif %}</span>
+  </div>
+  {% include thumb.html p=p %}
+</li>
