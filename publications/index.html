@@ -1,0 +1,39 @@
+---
+layout: default
+title: Publications
+---
+<h1>Publications</h1>
+<p class="small">{{ site.data.publications | size }} papers. Full list also on <a href="{{ site.author.scholar }}">Google Scholar</a> and <a href="https://orcid.org/{{ site.author.orcid }}">ORCID</a>. My name is in bold.</p>
+
+<div class="filters" role="group" aria-label="Filter by topic">
+  <button type="button" data-f="all" aria-pressed="true">all</button>
+  <button type="button" data-f="energy">batteries &amp; energy</button>
+  <button type="button" data-f="glasses">glasses</button>
+  <button type="button" data-f="phase-change">phase-change</button>
+  <button type="button" data-f="devices">devices</button>
+  <button type="button" data-f="first">first author</button>
+</div>
+
+{% assign n = site.data.publications | size | plus: 1 %}
+{% assign years = site.data.publications | group_by: "year" %}
+{% for y in years %}
+<p class="year">{{ y.name }}</p>
+<ul class="pubs" style="--count: {{ n }}">
+  {% for p in y.items %}{% include pub.html p=p %}{% endfor %}
+</ul>
+{% assign n = n | minus: y.items.size %}
+{% endfor %}
+
+<script>
+  // topic filter; numbering stays tied to the full list
+  document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+    const f = b.dataset.f;
+    document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+    document.querySelectorAll(".pubs li").forEach(li => {
+      li.hidden = !(f === "all" || (f === "first" ? li.dataset.first : li.dataset.topic === f));
+    });
+    document.querySelectorAll(".year").forEach(h => {
+      h.hidden = ![...h.nextElementSibling.children].some(li => !li.hidden);
+    });
+  }));
+</script>
